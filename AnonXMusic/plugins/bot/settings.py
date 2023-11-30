@@ -93,9 +93,9 @@ oki = ["https://te.legra.ph/file/9a4449cf6728e6751935b.jpg", "https://te.legra.p
 @app.on_callback_query(filters.regex("spot") & ~BANNED_USERS)
 async def spoot(client, query: CallbackQuery):
     e=random.choice(oki)
-    await query.edit_message_media(InputMediaPhoto(e, caption=f"»{query.from_user.mention} ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴘ!"), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/solotreee"), 
-                                                                                                                                                                                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/Solotreee")],
-                                                                                                                                                                                   [InlineKeyboardButton(text="sᴛᴀᴛᴜs", url="https://t.me/solotreee/141"),
+    await query.edit_message_media(InputMediaPhoto(e, caption=f"»{query.from_user.mention} ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴘ!"), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/FRIENDS_2_FAMILY0"), 
+                                                                                                                                                                                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/FRIENDS_2_FAMILY0")],
+                                                                                                                                                                                   [InlineKeyboardButton(text="sᴛᴀᴛᴜs", url="https://t.me/FRIENDS_2_FAMILY0"),
                                                                                                                                                                                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="settingsback_helper")]]))
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
 @languageCB
