@@ -71,11 +71,11 @@ async def get_thumb(videoid):
         background = image2.filter(filter=ImageFilter.BoxBlur(20))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.5)
-        logo = ImageOps.expand(sex, border=5, fill="Cyan")
+        logo = ImageOps.expand(sex, border=8, fill="azure")
         background.paste(logo, (177, 120))
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 30)
-        font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 30)
+        font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 45)
         draw.text((1110, 8), unidecode("Fallen Music"), fill="white", font=arial)
         draw.text(
             (55, 560),
