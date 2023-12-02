@@ -75,7 +75,7 @@ async def get_thumb(videoid):
         background.paste(logo, (177, 120))
         draw = ImageDraw.Draw(background)
         arial = ImageFont.truetype("AnonXMusic/assets/font2.ttf", 30)
-        font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 45)
+        font = ImageFont.truetype("AnonXMusic/assets/font.ttf", 35)
         draw.text((1110, 8), unidecode("Fallen Music"), fill="white", font=arial)
         draw.text(
             (55, 560),
