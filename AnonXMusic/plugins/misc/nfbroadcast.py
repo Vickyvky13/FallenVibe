@@ -55,7 +55,7 @@ async def nfbraodcast_message(client, message, _):
         for i in served_users:
             try:
                 m = (
-                    await app.copy_message(chat_id=i, from_chat_id=y, message_id=x, reply_markup=message.reply_to_message.reply_markup, protect_content=True)
+                    await app.copy_message(chat_id=i, from_chat_id=y, message_id=x, reply_markup=message.reply_to_message.reply_markup, protect_content=True, has_spoiler=True)
                     if message.reply_to_message
                     else await app.send_message(i, text=query)
                 )
@@ -83,7 +83,7 @@ async def nfbraodcast_message(client, message, _):
         for i in chats:
             try:
                 m = (
-                    await app.copy_message(chat_id=i, from_chat_id=y, message_id=x, reply_markup=message.reply_to_message.reply_markup, protect_content=True)
+                    await app.copy_message(chat_id=i, from_chat_id=y, message_id=x, reply_markup=message.reply_to_message.reply_markup, protect_content=True, has_spoiler=True)
                     if message.reply_to_message
                     else await app.send_message(i, text=query)
                 )
